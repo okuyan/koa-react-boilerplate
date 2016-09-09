@@ -1,0 +1,5 @@
+koa-react-app:
+  build: .
+  command: echo 'ready'
+  volumes:
+    - .:/home/app/koa-react-app
