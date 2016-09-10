@@ -3,3 +3,4 @@ koa-react-app:
   command: echo 'ready'
   volumes:
     - .:/home/app/koa-react-app
+    - /home/app/koa-react-app/node_modules
