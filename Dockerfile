@@ -4,9 +4,11 @@ RUN useradd --user-group --create-home --shell /bin/false app
  
 ENV HOME=/home/app
 
-COPY package.json $HOME/koa-react-app/
+COPY package.json npm-shrinkwrap.json $HOME/koa-react-app/
 RUN chown -R app:app $HOME/*
 
 USER app
 WORKDIR $HOME/koa-react-app
 RUN npm install
+
+CMD ["npm", "run", "serve"]

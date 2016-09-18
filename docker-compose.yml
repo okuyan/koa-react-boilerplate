@@ -1,6 +1,7 @@
 koa-react-app:
   build: .
-  command: echo 'ready'
+  ports:
+    - '3000:3000'
   volumes:
     - .:/home/app/koa-react-app
     - /home/app/koa-react-app/node_modules

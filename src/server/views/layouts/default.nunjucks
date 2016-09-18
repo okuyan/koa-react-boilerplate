@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ pageTitle }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ metaDescription }}" />
+    <script async src="//cdn.optimizely.com/js/{{ optimizelyId }}.js"></script>
+    <link rel="stylesheet" href="{{ assetPath }}/lo3/css/{{ hostId }}.css" />
+
+    {% block header %}{% endblock %}
+</head>
+<body>
+    {% block layout %}
+        <div id="header">
+            {% include 'partials/header.nunjucks' %}
+        </div>
+        <div id="content-top"></div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="content-bottom"></div>
+        <div id="footer">
+            <div>{% include 'partials/footer.nunjucks' %}</div>
+        </div>
+    {% endblock %}
+</body>
+</html>
