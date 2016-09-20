@@ -9,4 +9,7 @@ router.get('/', async (ctx, next) => {
   await ctx.render('index');
 });
 
+router.get('/flow', async (ctx, next) => {
+  await ctx.render('index');
+})
 export default router;
