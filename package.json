@@ -6,7 +6,8 @@
   "scripts": {
     "build:server": "babel src/server -d dist/server --copy-files",
     "start": "NODE_PATH=. node dist/server/index.js",
-    "serve": "NODE_PATH=. nodemon src/server/index.js --ignore src/client/ --ignore dist/client --ignore tests/ -e js,nunjucks --watch src/ --exec babel-node --presets es2015,stage-2"
+    "serve": "NODE_PATH=. nodemon src/server/index.js --ignore src/client/ --ignore dist/client --ignore tests/ -e js,nunjucks --watch src/ --exec babel-node --presets es2015,stage-2",
+    "dev": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
@@ -51,6 +52,7 @@
     "react-router": "^2.8.1",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.6.0",
+    "redux-form": "^6.0.5",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "underscore": "^1.8.3"

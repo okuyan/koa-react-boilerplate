@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import config from '../config';
+import config from '../configs/default';
 import FormInput from './FormInput';
 import FormSelect from './FormSelect';
 
